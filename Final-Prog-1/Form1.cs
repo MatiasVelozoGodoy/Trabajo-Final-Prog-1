@@ -39,9 +39,8 @@ namespace Final_Prog_1
             btnCacelar.Visible= true;
             btnAgregar.Visible= false;
             txtContraseña.Visible= true;
-            btnPagarDeuda.Visible = true;
-            btnVerDeuda.Visible = true;
-            btnCargarDeuda.Visible = true;
+            btnIniciarSesion.Visible= false;
+
         }
 
         private void btnCacelar_Click(object sender, EventArgs e)
@@ -55,6 +54,22 @@ namespace Final_Prog_1
             btnPagarDeuda.Visible = false;
             btnVerDeuda.Visible = false;
             btnCargarDeuda.Visible = false;
+            btnIniciarSesion.Visible = true;
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Agregar nuevo = new Agregar();
+            nuevo.ShowDialog();
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("usuario encontrado");
+            btnPagarDeuda.Visible = true;
+            btnVerDeuda.Visible = true;
+            btnCargarDeuda.Visible = true;
+
         }
     }
 }
