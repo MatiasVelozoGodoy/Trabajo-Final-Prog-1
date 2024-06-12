@@ -11,7 +11,8 @@ namespace Dominio
         public int Patente { get; set; }
         public string Modelo { get; set;}
         public int Año { get; set;}
-        public string Marca { get; set;} 
+        public string Marca { get; set;}
+        public int Precio { get; set; }
 
     }
 }
